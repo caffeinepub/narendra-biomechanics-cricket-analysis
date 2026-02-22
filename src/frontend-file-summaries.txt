@@ -1,0 +1,13 @@
+{
+  "frontend/src/App.tsx": "Main application component managing splash screen transition, analysis modes (batting/bowling), and message displays with proper state management and footer attribution.",
+  "frontend/src/components/SplashScreen.tsx": "Splash screen component displaying Hindi text with fade-in animations for the creator's name and subtitle.",
+  "frontend/src/components/AppHeader.tsx": "Header component displaying the app title in Hindi with dark blue background styling.",
+  "frontend/src/components/UserGreeting.tsx": "User greeting component showing welcome message in Hindi with highlighted user ID.",
+  "frontend/src/components/AnalysisButton.tsx": "Reusable button component for analysis options with emoji, Hindi label, and hover effects.",
+  "frontend/src/components/ProButton.tsx": "Special pro feature button with gradient styling and animated shimmer effect for the live coach feature.",
+  "frontend/src/components/MessageDisplay.tsx": "Message display component for showing informational messages with close functionality.",
+  "frontend/src/components/AnalysisBox.tsx": "Analysis box component with video upload functionality, file preview, and simulated AI scanning animation.",
+  "frontend/src/index.css": "Global styles with custom OKLCH color system for dark theme, fade-in and slide-in animations, and app-specific color tokens.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with custom app color tokens matching the specified color scheme (#0f3460, #16213e, #00d2ff, yellow).",
+  "frontend/src/hooks/useQueries.ts": "Placeholder file for React Query hooks (no backend operations needed for this app)."
+}

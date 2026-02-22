@@ -1,0 +1,22 @@
+{
+  "backend/main.mo": "Empty Motoko actor serving as the backend entry point with no implemented functionality.",
+  "feature_evidence.json": "Feature evidence report documenting six implemented features including splash screen, header, user greeting, batting/bowling analysis buttons, and about section with associated files and test IDs.",
+  "frontend-file-summaries.txt": "JSON-formatted summaries of all frontend source files describing their purpose and functionality.",
+  "frontend/index.css": "Tailwind CSS configuration with custom OKLCH color variables for light and dark themes, including app-specific design tokens.",
+  "frontend/index.html": "HTML entry point with root div and module script reference for the React application titled 'Narendra Biomechanics Cricket Analysis'.",
+  "frontend/src/App.tsx": "Main React component managing splash screen, analysis modes (batting/bowling), about/pro messages, and footer with state-driven UI transitions.",
+  "frontend/src/components/AnalysisBox.tsx": "Modal component for video upload with file selection, preview, and simulated AI analysis animation for batting or bowling modes.",
+  "frontend/src/components/AnalysisButton.tsx": "Reusable button component displaying an emoji and Hindi label with hover effects for analysis options.",
+  "frontend/src/components/AppHeader.tsx": "Header component displaying the app title in Hindi with dark blue background styling.",
+  "frontend/src/components/MessageDisplay.tsx": "Modal component for displaying titled messages with close button functionality.",
+  "frontend/src/components/ProButton.tsx": "Special gradient button with animated shimmer effect for the pro live coach feature.",
+  "frontend/src/components/SplashScreen.tsx": "Full-screen splash component displaying creator name and subtitle in Hindi with fade-in animations.",
+  "frontend/src/components/UserGreeting.tsx": "Component displaying Hindi greeting with highlighted user ID '#RN-2026' in yellow.",
+  "frontend/src/hooks/useActor.ts": "React hook managing ICP actor creation with Internet Identity authentication and query invalidation on identity changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "React hook and provider for Internet Identity authentication on ICP, managing login state, identity persistence, and delegation validation with configurable AuthClient options.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder file for React Query hooks to interact with the backend; currently empty as no backend operations are needed.",
+  "frontend/src/index.css": "Tailwind CSS configuration with custom CSS variables for light/dark themes, defining color schemes including custom app colors (primary, header, accent, pro gradient) and animation keyframes.",
+  "frontend/src/main.tsx": "Application entry point that renders the root component wrapped with QueryClientProvider and InternetIdentityProvider for state management and authentication.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending the theme with custom colors using OKLCH color space, custom animations, and plugins for typography, container queries, and animations.",
+  "project_state.json": "Project metadata describing a Hindi-language cricket biomechanics analysis app (tribute to Narendra Yadav) with batting/bowling analysis, video upload, splash screen, and dark theme UI features."
+}

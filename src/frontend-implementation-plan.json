@@ -1,0 +1,204 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Create cricket biomechanics analysis app with Hindi interface",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Create splash screen with Hindi text, specific styling, and fade-in animation",
+      "acceptanceCriteria": [
+        "Splash screen displays Hindi text with specified styling",
+        "Fade-in animation is applied to both heading and subtitle",
+        "Splash screen transitions to main app after animation completes"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/SplashScreen.tsx",
+          "operation": "create",
+          "description": "Create SplashScreen component displaying 'रोहित नरेंद्र यादव' as main heading (40px font) and 'प्रस्तुत करते हैं' as subtitle with cyan color (#00d2ff) and 3px letter spacing. Implement fade-in animation effect and auto-transition to main app after animation completes."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add splash screen state management to control visibility and transition. Show SplashScreen component on initial load, then transition to main app content after animation completes."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Add fade-in animation keyframes for splash screen text elements."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Implement main app header with Hindi title and dark blue background",
+      "acceptanceCriteria": [
+        "Header displays Hindi text correctly",
+        "Background color is #16213e",
+        "Header is prominently positioned at the top of the main app"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/AppHeader.tsx",
+          "operation": "create",
+          "description": "Create AppHeader component displaying 'नरेंद्र बायोमैकेनिक्स क्रिकेट एनालिसिस' with dark blue background (#16213e). Position prominently at the top of the main app with proper padding and styling."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Integrate AppHeader component at the top of the main app layout after splash screen transition."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Display user greeting with user ID highlighted in yellow",
+      "acceptanceCriteria": [
+        "Greeting text is displayed in Hindi",
+        "User ID #RN-2026 is shown in yellow color",
+        "Text is visible below the header"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/UserGreeting.tsx",
+          "operation": "create",
+          "description": "Create UserGreeting component displaying 'नमस्ते! अपनी आईडी:' with user ID '#RN-2026' highlighted in yellow color. Position below the app header with appropriate spacing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add UserGreeting component below the AppHeader in the main app layout."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Create batting biomechanics analysis button that initiates batting analysis mode",
+      "acceptanceCriteria": [
+        "Button displays cricket bat emoji and Hindi label",
+        "Clicking button triggers batting analysis mode",
+        "Analysis box becomes visible and shows batting-specific content"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/AnalysisButton.tsx",
+          "operation": "create",
+          "description": "Create reusable AnalysisButton component that accepts props for emoji, label text, and click handler. Apply consistent dark theme styling with proper spacing and hover effects."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add batting analysis button using AnalysisButton component with label '🏏 बैटिंग बायोमैकेनिक्स'. Implement click handler to set analysis mode state to 'batting' and show the analysis box with batting-specific content."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Create bowling biomechanics analysis button that initiates bowling analysis mode",
+      "acceptanceCriteria": [
+        "Button displays baseball emoji and Hindi label",
+        "Clicking button triggers bowling analysis mode",
+        "Analysis box becomes visible and shows bowling-specific content"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add bowling analysis button using AnalysisButton component with label '⚾ बॉलिंग बायोमैकेनिक्स'. Implement click handler to set analysis mode state to 'bowling' and show the analysis box with bowling-specific content."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Implement about section button that displays dedication message",
+      "acceptanceCriteria": [
+        "Button displays info icon and Hindi label",
+        "Clicking button shows dedication message in Hindi",
+        "Message explains the app is built in honor of Narendra Yadav and to understand cricket intricacies"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add about section button using AnalysisButton component with label 'ℹ️ अबाउट सेक्शन'. Implement click handler to display message: 'About: यह ऐप मेरे पिता नरेंद्र यादव के सम्मान और क्रिकेट की बारीकियों को समझने के लिए बनाया गया है।' using a modal or inline message display."
+        },
+        {
+          "path": "frontend/src/components/MessageDisplay.tsx",
+          "operation": "create",
+          "description": "Create MessageDisplay component to show informational messages with dark theme styling and proper spacing. Support dismissing the message."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Create pro feature button with coming soon message for live coach functionality",
+      "acceptanceCriteria": [
+        "Button displays star emoji and bilingual label (Hindi + English)",
+        "Button has distinct 'pro' styling to differentiate it from regular buttons",
+        "Clicking shows coming soon message about live expert coach feature"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ProButton.tsx",
+          "operation": "create",
+          "description": "Create ProButton component with distinct pro styling (gradient or special accent) displaying '⭐ प्रो फीचर (Live Coach)'. Apply visual differentiation from regular buttons using enhanced colors or border effects."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add ProButton component to main layout. Implement click handler to display message: 'प्रो फीचर: जल्द ही आप सीधे एक्सपर्ट कोच से बात कर पाएंगे!' using MessageDisplay component."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Create hidden analysis box with video upload capability",
+      "acceptanceCriteria": [
+        "Analysis box is hidden by default",
+        "Box becomes visible when batting or bowling analysis is started",
+        "File input accepts video file types only",
+        "All text labels are in Hindi",
+        "Box has dark blue background (#16213e), 20px top margin, 15px padding, and 10px border radius"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/AnalysisBox.tsx",
+          "operation": "create",
+          "description": "Create AnalysisBox component with title 'एनालिसिस शुरू...', instruction text 'अपना वीडियो अपलोड करें (AI स्कैनिंग चालू होगी)', and video file upload input accepting video formats (mp4, mov, avi, etc.). Apply dark blue background (#16213e), 20px top margin, 15px padding, and 10px border radius. Component accepts visibility prop and analysis mode prop to display mode-specific content."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add AnalysisBox component with conditional rendering based on analysis mode state. Pass current analysis mode ('batting' or 'bowling') to display appropriate content. Initially hidden (analysis mode is null), becomes visible when user clicks batting or bowling analysis button."
+        }
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "summary": "Apply consistent dark theme styling throughout the interface",
+      "acceptanceCriteria": [
+        "Main background uses #0f3460 color",
+        "Accent elements use cyan (#00d2ff)",
+        "Consistent spacing is applied to all components",
+        "Interface has cohesive dark theme aesthetic"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Apply global dark theme styles with background color #0f3460, cyan accent color (#00d2ff) for links and highlights. Define CSS custom properties for theme colors and consistent spacing values (20px margins, 15px padding, 10px border radius). Ensure body and root elements use the dark background."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Extend Tailwind theme with custom colors (primary: #0f3460, accent: #00d2ff, header: #16213e, highlight: yellow) and spacing utilities matching the design system (20px margins, 15px padding, 10px border radius)."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Apply dark theme background color (#0f3460) to main app container and ensure consistent spacing throughout the layout using the defined spacing values."
+        }
+      ]
+    }
+  ]
+}

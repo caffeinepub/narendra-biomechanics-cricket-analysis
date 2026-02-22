@@ -1,0 +1,162 @@
+{
+  "kind": "build_request",
+  "title": "Create cricket biomechanics analysis app with Hindi interface",
+  "projectName": "Narendra Cricket Biomechanics",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a splash screen displaying 'रोहित नरेंद्र यादव' as the main heading (40px font size) and 'प्रस्तुत करते हैं' as a subtitle with cyan color (#00d2ff) and 3px letter spacing, with fade-in animation effect",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Splash screen displays Hindi text with specified styling",
+        "Fade-in animation is applied to both heading and subtitle",
+        "Splash screen transitions to main app after animation completes"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Implement main app header displaying 'नरेंद्र बायोमैकेनिक्स क्रिकेट एनालिसिस' with dark blue background (#16213e)",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Header displays Hindi text correctly",
+        "Background color is #16213e",
+        "Header is prominently positioned at the top of the main app"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Display user greeting 'नमस्ते! अपनी आईडी:' with user ID '#RN-2026' highlighted in yellow",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Greeting text is displayed in Hindi",
+        "User ID #RN-2026 is shown in yellow color",
+        "Text is visible below the header"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Create batting biomechanics analysis button labeled '🏏 बैटिंग बायोमैकेनिक्स' that initiates batting analysis mode when clicked",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Button displays cricket bat emoji and Hindi label",
+        "Clicking button triggers batting analysis mode",
+        "Analysis box becomes visible and shows batting-specific content"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Create bowling biomechanics analysis button labeled '⚾ बॉलिंग बायोमैकेनिक्स' that initiates bowling analysis mode when clicked",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Button displays baseball emoji and Hindi label",
+        "Clicking button triggers bowling analysis mode",
+        "Analysis box becomes visible and shows bowling-specific content"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Implement about section button labeled 'ℹ️ अबाउट सेक्शन' that displays message: 'About: यह ऐप मेरे पिता नरेंद्र यादव के सम्मान और क्रिकेट की बारीकियों को समझने के लिए बनाया गया है।' when clicked",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Button displays info icon and Hindi label",
+        "Clicking button shows dedication message in Hindi",
+        "Message explains the app is built in honor of Narendra Yadav and to understand cricket intricacies"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Create pro feature button labeled '⭐ प्रो फीचर (Live Coach)' that displays placeholder message: 'प्रो फीचर: जल्द ही आप सीधे एक्सपर्ट कोच से बात कर पाएंगे!' when clicked",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Button displays star emoji and bilingual label (Hindi + English)",
+        "Button has distinct 'pro' styling to differentiate it from regular buttons",
+        "Clicking shows coming soon message about live expert coach feature"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Create hidden analysis box (initially display: none) with title 'एनालिसिस शुरू...', instruction text 'अपना वीडियो अपलोड करें (AI स्कैनिंग चालू होगी)', and video file upload input that accepts video formats",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Analysis box is hidden by default",
+        "Box becomes visible when batting or bowling analysis is started",
+        "File input accepts video file types only",
+        "All text labels are in Hindi",
+        "Box has dark blue background (#16213e), 20px top margin, 15px padding, and 10px border radius"
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Apply consistent dark theme styling with background color #0f3460, cyan accent color (#00d2ff), and proper spacing (20px margins, 15px padding, 10px border radius) throughout the interface",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Main background uses #0f3460 color",
+        "Accent elements use cyan (#00d2ff)",
+        "Consistent spacing is applied to all components",
+        "Interface has cohesive dark theme aesthetic"
+      ]
+    }
+  ],
+  "constraints": [
+    "All user-facing text must be in Hindi (Devanagari script) as provided in the original HTML",
+    "Maintain the specific color scheme: background #0f3460, accent #00d2ff, header background #16213e, yellow for user ID",
+    "Analysis box must be hidden initially and only shown when batting or bowling analysis is triggered"
+  ],
+  "nonGoals": [
+    "Actual AI video analysis implementation",
+    "Live coach video call functionality",
+    "Backend storage of analysis results",
+    "User authentication system",
+    "Multiple user ID management"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

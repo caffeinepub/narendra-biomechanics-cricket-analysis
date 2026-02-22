@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Cricket biomechanics analysis app with batting and bowling analysis features, video upload capability, and Hindi language interface. Tribute app for Narendra Yadav.",
+  "architectural_notes": [
+    "Hindi language UI throughout the application",
+    "Splash screen transitions to main app interface",
+    "Video upload accepts video/* file types",
+    "Analysis sections hidden by default, shown on button click",
+    "Color scheme: #16213e background, #00d2ff accent"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-splash-screen-displaying-as-the-main-heading-40px-font-size-and-as-a-subtitle-with-cyan-color-00d2ff-and-3px-letter-spacing-with-fade-in-animation-effect",
+      "title": "Create a splash screen displaying 'रोहित नरेंद्र यादव' as the main heading (40px font size) and 'प्रस्तुत करते हैं' as a subtitle with cyan color (#00d2ff) and 3px letter spacing, with fade-in animation effect",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-main-app-header-displaying-with-dark-blue-background-16213e",
+      "title": "Implement main app header displaying 'नरेंद्र बायोमैकेनिक्स क्रिकेट एनालिसिस' with dark blue background (#16213e)",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-display-user-greeting-with-user-id-rn-2026-highlighted-in-yellow",
+      "title": "Display user greeting 'नमस्ते! अपनी आईडी:' with user ID '#RN-2026' highlighted in yellow",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-batting-biomechanics-analysis-button-labeled-that-initiates-batting-analysis-mode-when-clicked",
+      "title": "Create batting biomechanics analysis button labeled '🏏 बैटिंग बायोमैकेनिक्स' that initiates batting analysis mode when clicked",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-bowling-biomechanics-analysis-button-labeled-that-initiates-bowling-analysis-mode-when-clicked",
+      "title": "Create bowling biomechanics analysis button labeled '⚾ बॉलिंग बायोमैकेनिक्स' that initiates bowling analysis mode when clicked",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-about-section-button-labeled-that-displays-message-about-when-clicked",
+      "title": "Implement about section button labeled 'ℹ️ अबाउट सेक्शन' that displays message: 'About: यह ऐप मेरे पिता नरेंद्र यादव के सम्मान और क्रिकेट की बारीकियों को समझने के लिए बनाया गया है।' when clicked",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-pro-feature-button-labeled-live-coach-that-displays-placeholder-message-when-clicked",
+      "title": "Create pro feature button labeled '⭐ प्रो फीचर (Live Coach)' that displays placeholder message: 'प्रो फीचर: जल्द ही आप सीधे एक्सपर्ट कोच से बात कर पाएंगे!' when clicked",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-hidden-analysis-box-initially-display-none-with-title-instruction-text-ai-and-video-file-upload-input-that-accepts-video-formats",
+      "title": "Create hidden analysis box (initially display: none) with title 'एनालिसिस शुरू...', instruction text 'अपना वीडियो अपलोड करें (AI स्कैनिंग चालू होगी)', and video file upload input that accepts video formats",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-consistent-dark-theme-styling-with-background-color-0f3460-cyan-accent-color-00d2ff-and-proper-spacing-20px-margins-15px-padding-10px-border-radius-throughout-the-interface",
+      "title": "Apply consistent dark theme styling with background color #0f3460, cyan accent color (#00d2ff), and proper spacing (20px margins, 15px padding, 10px border radius) throughout the interface",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Splash screen with Hindi text and fade-in animation",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Batting biomechanics analysis feature",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Bowling biomechanics analysis feature",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Video upload functionality with AI scanning",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "About section with dedication message",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Pro feature placeholder for live coach interaction",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "User ID display (#RN-2026)",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Narendra Biomechanics Cricket Analysis",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
